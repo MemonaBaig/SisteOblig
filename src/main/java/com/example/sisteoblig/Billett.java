@@ -10,7 +10,7 @@ public class Billett {
 
     private String epost;
 
-    public Billett(String film, String antall, String fornavn, String etternavn, int telefonnr, String epost) {
+    public Billett() {
     }
 
     //Statisk metode for variablene
