@@ -34,7 +34,3 @@ public class KundeRepository {
     }
 }
 
-/*
-Fikk dessverre ikke til å fikse feilen til Billett, Orakel prøvde også men vet ikke hva som var feil
-Som gjorde at å legge til billett og sql delen med sletting av billettene heller ikke fungerte
- */
