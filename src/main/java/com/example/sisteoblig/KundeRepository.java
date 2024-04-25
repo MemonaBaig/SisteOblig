@@ -13,7 +13,7 @@ public class KundeRepository {
     private JdbcTemplate db;
 
     public void lagreBillett(Billett enBillett){
-        String sql= "INSERT INTO Billett(kino, antall, fornavn, etternavn, telefonnr, epost) VALUES(?,?,?,?,?,?)";
+        String sql= "INSERT INTO Billett(film, antall, fornavn, etternavn, telefonnr, email) VALUES(?,?,?,?,?,?)";
         db.update(sql,enBillett.getKino(),enBillett.getAntall(),enBillett.getFornavn(),
                 enBillett.getEtternavn(),enBillett.getTelefonnr(),enBillett.getEpost());
     }
@@ -33,3 +33,8 @@ public class KundeRepository {
         db.update(sql);
     }
 }
+
+/*
+Fikk dessverre ikke til å fikse feilen til Billett, Orakel prøvde også men vet ikke hva som var feil
+Som gjorde at å legge til billett og sql delen med sletting av billettene heller ikke fungerte
+ */
